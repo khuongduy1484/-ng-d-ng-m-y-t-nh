@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="number" id="number1" >
+<br>
+
+<input type="number" id="number2">
+<br>
+<button type="button" onclick="addition();">addition(+) </button>
+<button type="button" onclick="Subtraction();">Subtraction(-) </button>
+<button type="button" onclick="Multipcation();">Multipcation(x) </button>
+<button type="button" onclick="divison();">divison(/) </button>
+<p>Result is: <span id ='result'></span></p>
+<script>
+function addition() {
+    let a =parseFloat(document.getElementById("number1").value)
+    let b =parseFloat(document.getElementById("number2").value)
+  result = a + b
+  document.getElementById('result').innerHTML= result
+}
+function Subtraction() {
+    let a =parseFloat(document.getElementById("number1").value)
+    let b =parseFloat(document.getElementById("number2").value)
+result= a - b
+document.getElementById("result").innerHTML = result
+}
+function Multipcation() {
+    let a =parseFloat(document.getElementById("number1").value)
+    let b =parseFloat(document.getElementById("number2").value)
+    result =a * b
+    document.getElementById("result").innerHTML =result
+
+}
+function divison() {
+    let a =parseFloat(document.getElementById("number1").value)
+    let b = parseFloat(document.getElementById("number2").value)
+    result = a / b
+    document.getElementById("result").innerHTML =result
+}
+
+
+
+
+</script>
+
+</body>
+</html>
